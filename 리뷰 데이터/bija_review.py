@@ -6,10 +6,8 @@ from selenium.webdriver.common.by import By
 import time
 import pandas
 
-# 웹 드라이버 설정
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))  # chromedriver의 경로를 제공해야 합니다.
 
-# TripAdvisor 웹 페이지로 이동
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))  
 URL = 'https://www.tripadvisor.co.kr/Attraction_Review-g297885-d2202426-Reviews-Bijarim_Forest-Jeju_Jeju_Island.html'
 driver.get(url=URL)
 
