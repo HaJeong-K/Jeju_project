@@ -17,8 +17,11 @@
   + ~~주제가 갈아엎어져 역할 재분담 필요. 확정시 수정 예정.(23.09.08)~~
   + 현재 각 파트당 역할을 분담함.
     + 날씨 파트 >> 인기 관광지 파트로 변경됨(23.09.13) : Sang-Hyeok-Lee(https://github.com/Sang-Hyeok-Lee), SangMingyu(https://github.com/SangMingyu)
+    + PPT : SangMingyu(https://github.com/SangMingyu)
     + 성수기/비성수기 파트 : Ezraelyes(https://github.com/Ezraelyes), HWANHEECHO(https://github.com/HWANHEECHO)
+    + streamlit : HWANHEECHO(https://github.com/HWANHEECHO)
     + 물가 파트 : HaJeong-K(본인), Grace Kim(https://github.com/haeunkim48)
+    
  
 
 
@@ -92,12 +95,14 @@
 
 - 오늘 못한 일
   + 인기 관광지 : 관광지 지도시각화 마무리.
-  + 성수기 : 2022년 사후조사 데이터 전처리 마무리, ipynb파일 docstring 작성하기, streamlit 틀 만들기.
+  + 성수기 : 2022년 사후조사 데이터 전처리 마무리, ipynb파일 docstring 작성하기.
+  + streamlit : streamlit 틀 만들기.
   + 물가 : 데이터 전처리 부분의 추가 설명부분 미완 + 통계분석 시작 못함.
 
 - 내일 할 일
   + 인기 관광지 : 워드클라우드에 사용된 관광지들 지도시각화에 추가작업 및 다음작업 or 관광지 데이터 수집.
-  + 성수기 : 2022년 사후조사 데이터 전처리 마무리 후 업로드, ipynb파일 docstring 작성하기, streamlit 구체화하기.
+  + 성수기 : 2022년 사후조사 데이터 전처리 마무리 후 업로드, ipynb파일 docstring 작성하기.
+  + streamlit : streamlit 구체화하기.
   + 물가 : 데이터 전처리 파트 최종 완료 + 시각화와 가설설정.
 
 - **Trounle-shooting**
@@ -110,7 +115,8 @@
 - 오늘 한 일
   + 인기 관광지 : 셀레니움을 사용해 5회 이상 언급된 6개 관광지 대상으로 각각 리뷰 110개씩 추출(trip advisor),
                   konlpy를 통해 형태소 분리 후 stopwords 작성하여 리뷰 데이터 텍스트 마이닝 중, 크롤링 및 텍스트 마이닝을 진행한 모든 제주 관광지 지도시각화 완료.
-  + 성수기 : 월간 보고서 데이터 전처리 ipynb파일 docstring 작성하기, streamlit 큰 틀 구성하기.
+  + 성수기 : 월간 보고서 데이터 전처리 ipynb파일 docstring 작성하기.
+  + streamlit : streamlit 큰 틀 구성하기.
   + 물가 : 최종 합본 전처리 설명부분 수정 + 시각화 활용방안 모색.
 
 - 오늘 못한 일
@@ -119,7 +125,8 @@
 
 - 내일 할 일
   + 인기 관광지 : 텍스트 데이터 추가수집에 대한 결정, 전체 데이터 대상 텍스트 마이닝 작업 필요.
-  + 성수기 : 전처리 완료된 데이터 수합하여 streamlit에 올려두기, streamlit 페이지 꾸미기.
+  + 성수기 : 전처리 완료된 데이터 수합하기.
+  + streamlit : 전처리 완료된 데이터 수합하여 streamlit에 올려두기, streamlit 페이지 꾸미기.
   + 물가 : 시각화와 가설설정.
 
 - **Trounle-shooting**
@@ -134,3 +141,35 @@
  
 - 내일 할 일
   + 물가 : 가설 설정 > 시각화를 바탕으로 구체화.
+
+[2023.09.17]
+- 오늘 한 일
+  + 물가 : 분산분석에 대한 부분 추가.
+ 
+- 내일 할 일
+  + 물가 : 가설 설정 및 채택, 분산 분석 완료 및 회귀분석 시작.
+ 
+[2023.09.18]
+- 오늘 한 일
+  + 인기 관광지 : 6가지 관광지를 코드에 적용 및 스탑워드 작성.
+  + PPT : PPT 개요파트 사전작업 및 PPT에 사용할 자료조사, 참고자료 조사. 
+  + 성수기 : 2022 사후조사 데이터 전처리, 2022 사전조사 일부 시각화, 성수기와 관광객 수의 관계에 대한 가설검정, streamlit 페이지 일부 꾸미기.
+  + 물가 : 결측치 보간법 채택, 활용법 작성 및 결측치 채우기, 다시한 전처리를 바탕으로 박스플롯 구현, 일원 분산분석 시작(내일 방향성 회의 후 검토 예정), 카테고리별 회귀 산점도 그리기(내일 방향성 회의 후 검토 예정).
+
+- 오늘 못한 일
+  + PPT : 사용한 데이터 소개페이지 작성 및 그 외 모든 내용. 
+  + 성수기 : 2022 사전/사후조사 시각화 마무리.
+  + streamlit : 전처리 완료된 데이터 수합하여 streamlit에 올려두기
+  + 물가 : 가설 검정 마무리.
+
+- 내일 할 일
+  + PPT : 현재까지 사용하고, 완성된 데이터를 활용한 PPT 페이지 작성.
+  + 성수기 : 2022 사전/사후조사 시각화 완료.
+  + streamlit : 전처리 완료된 데이터 수합하여 streamlit에 올려두기
+  + 물가 : 물가파트의 종속변수에 대한 변동부분 회의, 가설 채택 및 부가 설명, 회귀 분석.
+
+- **Trounle-shooting**
+  + 물가데이터 박스플롯 시각화를 진행하며 labels와 positions 크기 호환이 안되는 이슈 발생.
+    + 해결방법을 찾아 해결했고, 블로그에 상세히 작성함. (https://forky-develop.tistory.com/entry/%EB%B0%95%EC%8A%A4%ED%94%8C%EB%A1%AF-labels%EC%99%80-positions-%ED%81%AC%EA%B8%B0-%ED%98%B8%ED%99%98-%EC%95%88%EB%90%98%EB%8A%94-%EC%9D%B4%EC%8A%88)
+  + 분산분석을 진행하며 자잘한 이슈가 발생함.
+    + 해결방법을 찾아 해결했고, 블로그에 상세히 작성함. (https://forky-develop.tistory.com/entry/%EB%B6%84%EC%82%B0%EB%B6%84%EC%84%9D%EC%9D%84-%EC%A7%84%ED%96%89%ED%95%98%EB%A9%B4%EC%84%9C-%EB%B0%9C%EC%83%9D%ED%95%9C-%EC%9D%B4%EC%8A%88%EB%93%A4-%ED%95%B4%EA%B2%B0%EB%B2%95)
