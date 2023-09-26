@@ -1,40 +1,42 @@
 # -*- coding:utf-8 -*-
 
 import streamlit as st
+import price_app as price
+import peak_app as peak
+import weather_app as weather
 
 def run_data_app():
     st.header('분석내용')
-    st.markdown('(임시)각 항목별로 시각화 및 통계자료와 사용된 전처리 데이터 노출')
     items = ['물가', '성수기', '날씨']
     item = st.sidebar.selectbox('분석항목', items)
     tabs = ['시각화', '통계', '데이터']
 
     if item == '물가':
         st.subheader('물가')
-        tab1, tab2, tab3 = st.tabs(tabs)
+        tab1, tab2, tab3, tab4 = st.tabs(['머신러닝'] + tabs)
         with tab1:
-            st.markdown('시각화')
+            price.pred_app()
         with tab2:
-            st.markdown('통계')
+            price.vis_app()
         with tab3:
-            st.markdown('데이터')
+            price.stat_app()
+        with tab4:
+            price.data_app()
     elif item == '성수기':
         st.subheader('성수기')
         tab1, tab2, tab3 = st.tabs(tabs)
         with tab1:
-            st.markdown('시각화')
+            peak.vis_app()
         with tab2:
-            st.markdown('통계')
+            peak.stat_app()
         with tab3:
-            st.markdown('데이터')
+            peak.data_app()
     elif item == '날씨':
         st.subheader('날씨')
-        tab1, tab2, tab3 = st.tabs(tabs)
+        tab1, tab2 = st.tabs(['시각화', '데이터'])
         with tab1:
-            st.markdown('시각화')
+            weather.vis_app()
         with tab2:
-            st.markdown('통계')
-        with tab3:
-            st.markdown('데이터')
+            weather.data_app()
     else:
         pass
