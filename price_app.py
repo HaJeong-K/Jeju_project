@@ -90,6 +90,7 @@ def pred_app():
             ax.set_xlabel('연도')
             ax.set_ylabel(f'{name}')
             ax.grid(False)
+            fig1.tight_layout()
             fig1.savefig('./data/물가/전체지출_예측.png', bbox_inches = 'tight')
             image1 = Image.open('./data/물가/전체지출_예측.png')
 
@@ -117,17 +118,17 @@ def pred_app():
             axs[(i-1)//2, (i-1)%2].set_xlabel('연도')
             axs[(i-1)//2, (i-1)%2].set_ylabel(f'{name}')
             axs[(i-1)//2, (i-1)%2].grid(False)
+            fig2.tight_layout()
 
             temp_sum = pd.concat(temp_dict.values(), axis = 0, ignore_index = True)
             temp_sum['날짜'] = temp_sum['연도'].astype(str) + '-' + temp_sum['월'].apply(lambda x: f'{x:02d}')
             axes[(i-1)//2, (i-1)%2].plot(temp_sum['날짜'], temp_sum['평균'], marker = 'o', linestyle = '-', color = 'b')
             axes[(i-1)//2, (i-1)%2].set_xlabel('월별')
-            axes[(i-1)//2, (i-1)%2].set_ylabel('전체 비용의 평균값')
-            axes[(i-1)//2, (i-1)%2].set_title('전체 비용의 월별 평균값')
+            axes[(i-1)//2, (i-1)%2].set_ylabel(f'{name}의 평균값')
+            axes[(i-1)//2, (i-1)%2].set_title(f'{name}의 월별 평균값')
             axes[(i-1)//2, (i-1)%2].set_xticklabels(axes[(i-1)//2, (i-1)%2].get_xticklabels(), rotation = 45)
             axes[(i-1)//2, (i-1)%2].grid(True)
             fig4.tight_layout()
-            fig4.savefig('./data/물가/전체지출_예측_point.png', bbox_inches = 'tight')
         
         # 예측 결과를 출력하기
         temp_predict_list = []
