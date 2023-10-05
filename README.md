@@ -92,7 +92,7 @@ https://jejuproject-mcyzdrar8vbzfezenliblp.streamlit.app/
   + 성수기 : 2022년 여름시즌 사전, 사후조사 데이터 수집.
   + 물가 : 2020~21년 데이터 수집 및 모든 데이터 전처리 시작.
 
-- **Trounle-shooting**
+- **Trouble-shooting**
   + **날씨 부분만 현재 코드가 진행됨.**
   + 모든 목적별 방문객의 합을 변수로 갖는 전체 방문객 컬럼을 만드는 과정에서 합계 수치가 과도하게 크게 나타나 일부 변수 대상 문자열 -> 숫자열 변환 시행
  
@@ -129,7 +129,7 @@ https://jejuproject-mcyzdrar8vbzfezenliblp.streamlit.app/
   + 성수기 : 활용 데이터 확정 및 전처리 마무리.
   + 물가 : 2020년, 2022년 전처리 마무리 + 통계분석 시작.
 
-- **Trounle-shooting**
+- **Trouble-shooting**
   + 물가 파트 전처리 과정에서 csv파일을 pandas DF로 읽어오는 것에 실패함 => 인코딩의 문제가 있었음.
     + 해결방법을 찾아 해결했고, 블로그에 상세히 작성함. (https://forky-develop.tistory.com/entry/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC-%EA%B3%BC%EC%A0%95%EC%97%90%EC%84%9C-%EB%B0%9C%EC%83%9D%ED%95%9C-csv-%ED%8C%8C%EC%9D%BC-%EC%9D%B8%EC%BD%94%EB%94%A9-%EC%9D%B4%EC%8A%88-%ED%95%B4%EA%B2%B0%EB%B2%95)
   + 인기 관광지 목록을 텍스트 마이닝해서 워드 클라우드를 활용하는데 한글이 깨지는 현상이 일어남 > matplotlib.font_manager 참고해서 해결함.
@@ -152,7 +152,7 @@ https://jejuproject-mcyzdrar8vbzfezenliblp.streamlit.app/
   + streamlit : streamlit 구체화하기.
   + 물가 : 데이터 전처리 파트 최종 완료 + 시각화와 가설설정.
 
-- **Trounle-shooting**
+- **Trouble-shooting**
   + 지도 시각화를 진행하며 관광지 아이콘의 형태가 바뀌지 않는 경우가 존재
   + 아이콘의 색 또한 바뀌지 않는 경우가 존재
     + 공식 Document 및 스택오버플로우를 참고해서 명령어를 변경해서 문제 해결
@@ -176,7 +176,7 @@ https://jejuproject-mcyzdrar8vbzfezenliblp.streamlit.app/
   + streamlit : 전처리 완료된 데이터 수합하여 streamlit에 올려두기, streamlit 페이지 꾸미기.
   + 물가 : 시각화와 가설설정.
 
-- **Trounle-shooting**
+- **Trouble-shooting**
   + 물가데이터 시각화 활용 중 데이터 결측치로 인한 plotly 라인이 표시되지 않음.
     + 이 방법을 해결하기 위해서는 수집한 원데이터 자체에 데이터를 채워넣는 방법이 가장 확실했음 > 코드로 채우려했으나, matplotlib은 성공했지만 plotly는 구현하는 것에 문제가 있었음.
   + matplotlib을 사용했을 때도, 결측치와 한글 인코딩 이슈가 나타남 > 한글의 경우 나눔 고딕 폰트를 설정했고, 결측치는 코드를 구현해서 제로값으로 채워 그래프 표현함.
@@ -216,7 +216,7 @@ https://jejuproject-mcyzdrar8vbzfezenliblp.streamlit.app/
   + streamlit : 전처리 완료된 데이터 수합하여 streamlit에 올려두기.
   + 물가 : 물가파트의 종속변수에 대한 변동부분 회의, 가설 채택 및 부가 설명, 회귀 분석.
 
-- **Trounle-shooting**
+- **Trouble-shooting**
   + 물가데이터 박스플롯 시각화를 진행하며 labels와 positions 크기 호환이 안되는 이슈 발생.
     + 해결방법을 찾아 해결했고, 블로그에 상세히 작성함. (https://forky-develop.tistory.com/entry/%EB%B0%95%EC%8A%A4%ED%94%8C%EB%A1%AF-labels%EC%99%80-positions-%ED%81%AC%EA%B8%B0-%ED%98%B8%ED%99%98-%EC%95%88%EB%90%98%EB%8A%94-%EC%9D%B4%EC%8A%88)
   + 분산분석을 진행하며 자잘한 이슈가 발생함.
@@ -263,7 +263,7 @@ https://jejuproject-mcyzdrar8vbzfezenliblp.streamlit.app/
   + streamlit : 처리 완료된 나머지 데이터 연동하여 결과 노출시키기, 디자인 수정 및 추가 데이터 등록 반복.
   + 물가 : 예측 마무리 및 예측 결과 기반 시각화 시작.
 
-- **Trounle-shooting**
+- **Trouble-shooting**
   + 물가 부분의 데이터 프레임 병합과정에서 자잘한 오류 발생.
     + 해결방법을 찾아 해결했고, 블로그에 상세히 작성함. (https://forky-develop.tistory.com/entry/%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%94%84%EB%A0%88%EC%9E%84-%EB%B3%91%ED%95%A9%EA%B3%BC%EC%A0%95%EC%9D%98-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0%EA%B3%BC%EC%A0%95-pdconcat%EC%9C%BC%EB%A1%9C-%ED%95%B4%EA%B2%B0)
    
