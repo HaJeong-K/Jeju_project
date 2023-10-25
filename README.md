@@ -1,5 +1,5 @@
 # Jeju_project
-
+제주 관광 동향 프로젝트
 <br>
 
 ## 프로젝트 설명
@@ -78,6 +78,7 @@
 https://github.com/HaJeong-K/Jeju_project/blob/main/4%EC%A1%B0%20%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf
 
 <br>
+
 ## 배포용 스트림릿 페이지
 > 스트림릿에 사용된 데이터들이 너무 많아 렌더링이 오래걸림.
 >
