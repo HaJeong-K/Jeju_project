@@ -24,6 +24,9 @@
     + 성수기/비성수기 파트 : Ezraelyes(https://github.com/Ezraelyes), HWANHEECHO(https://github.com/HWANHEECHO)
     + streamlit : HWANHEECHO(https://github.com/HWANHEECHO)
     + 물가 파트 : HaJeong-K(본인), Grace Kim(https://github.com/haeunkim48)
+   
+- 데이터
+  + 데이터는 전반적으로 [제주 관광 공사](https://www.visitjeju.net/tourdata/)에서 제공한 DB를 참고함.
  
 <br>
 
