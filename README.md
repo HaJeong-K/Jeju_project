@@ -91,7 +91,7 @@ https://github.com/HaJeong-K/Jeju_project/blob/main/4%EC%A1%B0%20%EB%B0%9C%ED%91
 >
 > 추가로 수정하려 했으나, 이미 너무 많은 데이터들로 인해 제대로 보이지 않는 현상 때문에 추후 최종 프로젝트에서는 제대로 구현할 예정.
 
-https://jejuproject-mcyzdrar8vbzfezenliblp.streamlit.app/
+https://jeju-project.streamlit.app/
 
 <br>
 
